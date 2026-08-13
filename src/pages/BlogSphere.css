@@ -1,0 +1,427 @@
+/* =========================================================
+   BLOGSPHERE PROJECT PAGE
+========================================================= */
+
+.blogsphere-page {
+  min-height: 100vh;
+  background: #0b0a0f;
+  color: #f5f3f8;
+  padding: 0 7vw 100px;
+}
+
+
+/* =========================================================
+   BACK
+========================================================= */
+
+.blogsphere-back {
+  display: inline-block;
+
+  margin-top: 42px;
+  margin-bottom: 95px;
+
+  color: #b9a7ff;
+  text-decoration: none;
+
+  font-size: 16px;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.blogsphere-back:hover {
+  color: #ffffff;
+  transform: translateX(-4px);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.blogsphere-hero {
+  max-width: 1100px;
+  margin-bottom: 90px;
+}
+
+.blogsphere-label,
+.blogsphere-section-label {
+  color: #a995ff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.blogsphere-hero h1 {
+  margin: 28px 0 30px;
+
+  font-size: clamp(58px, 7vw, 105px);
+
+  line-height: 0.98;
+
+  letter-spacing: -4px;
+
+  font-weight: 700;
+}
+
+.blogsphere-intro {
+  max-width: 850px;
+
+  margin-bottom: 32px;
+
+  color: #aaa5b8;
+
+  font-size: 20px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.blogsphere-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.blogsphere-tags span,
+.blogsphere-tech-list span {
+  display: inline-flex;
+
+  padding: 10px 17px;
+
+  border: 1px solid #302a3c;
+
+  border-radius: 999px;
+
+  color: #bbaeff;
+
+  font-size: 14px;
+
+  background: rgba(255, 255, 255, 0.015);
+}
+
+
+/* =========================================================
+   PROJECT DEMO
+========================================================= */
+
+.blogsphere-demo {
+  max-width: 1250px;
+
+  margin: 0 auto 145px;
+}
+
+.blogsphere-demo h2,
+.blogsphere-section h2 {
+  margin: 28px 0 35px;
+
+  font-size: clamp(42px, 5vw, 70px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2.5px;
+}
+
+
+/* =========================================================
+   VIDEO
+   Natural ratio. No cropping.
+========================================================= */
+
+.blogsphere-video {
+  width: 65%;
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  border: 1px solid #292331;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  background: #07060a;
+}
+
+.blogsphere-video video {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  background: #07060a;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.blogsphere-section {
+  max-width: 1180px;
+
+  margin: 0 auto 145px;
+}
+
+.blogsphere-section > p {
+  max-width: 1050px;
+
+  color: #aaa5b8;
+
+  font-size: 20px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.blogsphere-features {
+  margin-top: 55px;
+
+  border-top: 1px solid #292331;
+}
+
+.blogsphere-feature {
+  display: grid;
+
+  grid-template-columns: 110px 1fr;
+
+  gap: 20px;
+
+  align-items: start;
+
+  padding: 30px 0;
+
+  border-bottom: 1px solid #292331;
+}
+
+.blogsphere-feature > span {
+  color: #a995ff;
+
+  font-size: 14px;
+
+  letter-spacing: 2px;
+}
+
+.blogsphere-feature h3 {
+  margin: 0 0 10px;
+
+  color: #f5f3f8;
+
+  font-size: 21px;
+
+  font-weight: 600;
+}
+
+.blogsphere-feature p {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: #aaa5b8;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   TECHNOLOGIES
+========================================================= */
+
+.blogsphere-technologies {
+  margin-bottom: 120px;
+}
+
+.blogsphere-tech-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 35px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.blogsphere-footer {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding-top: 40px;
+
+  border-top: 1px solid #292331;
+}
+
+.blogsphere-footer a {
+  color: #b9a7ff;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  transition: color 0.25s ease;
+}
+
+.blogsphere-footer a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .blogsphere-page {
+    padding: 0 5vw 70px;
+  }
+
+  .blogsphere-back {
+    margin-top: 28px;
+
+    margin-bottom: 65px;
+  }
+
+  .blogsphere-hero {
+    margin-bottom: 70px;
+  }
+
+  .blogsphere-hero h1 {
+    font-size: clamp(48px, 10vw, 78px);
+
+    letter-spacing: -3px;
+  }
+
+  .blogsphere-intro {
+    font-size: 18px;
+  }
+
+  .blogsphere-demo {
+    margin-bottom: 100px;
+  }
+
+  .blogsphere-video {
+    width: 75%;
+  }
+
+  .blogsphere-section {
+    margin-bottom: 100px;
+  }
+
+  .blogsphere-demo h2,
+  .blogsphere-section h2 {
+    font-size: 48px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .blogsphere-page {
+    padding: 0 20px 60px;
+  }
+
+  .blogsphere-back {
+    margin-top: 25px;
+
+    margin-bottom: 55px;
+  }
+
+  .blogsphere-label,
+  .blogsphere-section-label {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+  }
+
+  .blogsphere-hero h1 {
+    margin-top: 22px;
+
+    font-size: 48px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+  }
+
+  .blogsphere-intro {
+    font-size: 17px;
+
+    line-height: 1.7;
+  }
+
+  .blogsphere-demo {
+    margin-bottom: 85px;
+  }
+
+  .blogsphere-video {
+    width: 100%;
+
+    border-radius: 14px;
+  }
+
+  .blogsphere-demo h2,
+  .blogsphere-section h2 {
+    font-size: 40px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .blogsphere-section > p {
+    font-size: 17px;
+
+    line-height: 1.75;
+  }
+
+  .blogsphere-feature {
+    grid-template-columns: 55px 1fr;
+
+    gap: 10px;
+
+    padding: 25px 0;
+  }
+
+  .blogsphere-feature h3 {
+    font-size: 18px;
+  }
+
+  .blogsphere-feature p {
+    font-size: 15px;
+  }
+
+  .blogsphere-tags span,
+  .blogsphere-tech-list span {
+    padding: 8px 13px;
+
+    font-size: 13px;
+  }
+}

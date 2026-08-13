@@ -1,0 +1,427 @@
+/* =========================================================
+   PLACEMENTPREP AI PROJECT PAGE
+========================================================= */
+
+.placement-page {
+  min-height: 100vh;
+  background: #0b0a0f;
+  color: #f5f3f8;
+  padding: 0 7vw 100px;
+}
+
+
+/* =========================================================
+   BACK
+========================================================= */
+
+.placement-back {
+  display: inline-block;
+
+  margin-top: 42px;
+  margin-bottom: 95px;
+
+  color: #b9a7ff;
+  text-decoration: none;
+
+  font-size: 16px;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.placement-back:hover {
+  color: #ffffff;
+  transform: translateX(-4px);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.placement-hero {
+  max-width: 1100px;
+  margin-bottom: 90px;
+}
+
+.placement-label,
+.placement-section-label {
+  color: #a995ff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.placement-hero h1 {
+  margin: 28px 0 30px;
+
+  font-size: clamp(58px, 7vw, 105px);
+
+  line-height: 0.98;
+
+  letter-spacing: -4px;
+
+  font-weight: 700;
+}
+
+.placement-intro {
+  max-width: 850px;
+
+  margin-bottom: 32px;
+
+  color: #aaa5b8;
+
+  font-size: 20px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.placement-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.placement-tags span,
+.placement-tech-list span {
+  display: inline-flex;
+
+  padding: 10px 17px;
+
+  border: 1px solid #302a3c;
+
+  border-radius: 999px;
+
+  color: #bbaeff;
+
+  font-size: 14px;
+
+  background: rgba(255, 255, 255, 0.015);
+}
+
+
+/* =========================================================
+   PROJECT DEMO
+========================================================= */
+
+.placement-demo {
+  max-width: 1250px;
+
+  margin: 0 auto 145px;
+}
+
+.placement-demo h2,
+.placement-section h2 {
+  margin: 28px 0 35px;
+
+  font-size: clamp(42px, 5vw, 70px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2.5px;
+}
+
+
+/* =========================================================
+   VIDEO
+   Natural ratio. No cropping.
+========================================================= */
+
+.placement-video {
+  width: 65%;
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  border: 1px solid #292331;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  background: #07060a;
+}
+
+.placement-video video {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  background: #07060a;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.placement-section {
+  max-width: 1180px;
+
+  margin: 0 auto 145px;
+}
+
+.placement-section > p {
+  max-width: 1050px;
+
+  color: #aaa5b8;
+
+  font-size: 20px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.placement-features {
+  margin-top: 55px;
+
+  border-top: 1px solid #292331;
+}
+
+.placement-feature {
+  display: grid;
+
+  grid-template-columns: 110px 1fr;
+
+  gap: 20px;
+
+  align-items: start;
+
+  padding: 30px 0;
+
+  border-bottom: 1px solid #292331;
+}
+
+.placement-feature > span {
+  color: #a995ff;
+
+  font-size: 14px;
+
+  letter-spacing: 2px;
+}
+
+.placement-feature h3 {
+  margin: 0 0 10px;
+
+  color: #f5f3f8;
+
+  font-size: 21px;
+
+  font-weight: 600;
+}
+
+.placement-feature p {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: #aaa5b8;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   TECHNOLOGIES
+========================================================= */
+
+.placement-technologies {
+  margin-bottom: 120px;
+}
+
+.placement-tech-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 35px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.placement-footer {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding-top: 40px;
+
+  border-top: 1px solid #292331;
+}
+
+.placement-footer a {
+  color: #b9a7ff;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  transition: color 0.25s ease;
+}
+
+.placement-footer a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .placement-page {
+    padding: 0 5vw 70px;
+  }
+
+  .placement-back {
+    margin-top: 28px;
+
+    margin-bottom: 65px;
+  }
+
+  .placement-hero {
+    margin-bottom: 70px;
+  }
+
+  .placement-hero h1 {
+    font-size: clamp(48px, 10vw, 78px);
+
+    letter-spacing: -3px;
+  }
+
+  .placement-intro {
+    font-size: 18px;
+  }
+
+  .placement-demo {
+    margin-bottom: 100px;
+  }
+
+  .placement-video {
+    width: 75%;
+  }
+
+  .placement-section {
+    margin-bottom: 100px;
+  }
+
+  .placement-demo h2,
+  .placement-section h2 {
+    font-size: 48px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .placement-page {
+    padding: 0 20px 60px;
+  }
+
+  .placement-back {
+    margin-top: 25px;
+
+    margin-bottom: 55px;
+  }
+
+  .placement-label,
+  .placement-section-label {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+  }
+
+  .placement-hero h1 {
+    margin-top: 22px;
+
+    font-size: 48px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+  }
+
+  .placement-intro {
+    font-size: 17px;
+
+    line-height: 1.7;
+  }
+
+  .placement-demo {
+    margin-bottom: 85px;
+  }
+
+  .placement-video {
+    width: 100%;
+
+    border-radius: 14px;
+  }
+
+  .placement-demo h2,
+  .placement-section h2 {
+    font-size: 40px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .placement-section > p {
+    font-size: 17px;
+
+    line-height: 1.75;
+  }
+
+  .placement-feature {
+    grid-template-columns: 55px 1fr;
+
+    gap: 10px;
+
+    padding: 25px 0;
+  }
+
+  .placement-feature h3 {
+    font-size: 18px;
+  }
+
+  .placement-feature p {
+    font-size: 15px;
+  }
+
+  .placement-tags span,
+  .placement-tech-list span {
+    padding: 8px 13px;
+
+    font-size: 13px;
+  }
+}

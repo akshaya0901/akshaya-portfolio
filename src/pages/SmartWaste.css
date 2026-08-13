@@ -1,0 +1,446 @@
+/* =========================================================
+   SMART WASTE PROJECT PAGE
+   ========================================================= */
+
+.project-page {
+  min-height: 100vh;
+  background: #0b0a0f;
+  color: #f5f3f8;
+  padding: 0 7vw 100px;
+}
+
+
+/* =========================================================
+   BACK LINK
+   ========================================================= */
+
+.project-back {
+  display: inline-block;
+  margin-top: 42px;
+  margin-bottom: 95px;
+
+  color: #b9a7ff;
+  text-decoration: none;
+
+  font-size: 16px;
+  letter-spacing: 0.2px;
+
+  transition: color 0.25s ease,
+              transform 0.25s ease;
+}
+
+.project-back:hover {
+  color: #ffffff;
+  transform: translateX(-4px);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.project-hero {
+  max-width: 1050px;
+  margin-bottom: 85px;
+}
+
+.project-label,
+.project-section-label {
+  color: #a995ff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.project-hero h1 {
+  margin: 28px 0 30px;
+
+  max-width: 1050px;
+
+  font-size: clamp(58px, 7vw, 105px);
+  line-height: 0.98;
+  letter-spacing: -4px;
+  font-weight: 700;
+}
+
+.project-intro {
+  max-width: 850px;
+
+  margin: 0 0 32px;
+
+  color: #aaa5b8;
+
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   TAGS
+   ========================================================= */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tags span,
+.project-tech-list span {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 10px 17px;
+
+  border: 1px solid #302a3c;
+  border-radius: 999px;
+
+  color: #bbaeff;
+
+  font-size: 14px;
+
+  background: rgba(255, 255, 255, 0.015);
+}
+
+
+/* =========================================================
+   MAIN PROJECT IMAGE
+   ========================================================= */
+
+.project-main-media {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto 145px;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  border: 1px solid #292331;
+
+  background: #111016;
+}
+
+.project-main-media img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  /* IMPORTANT:
+     Keeps the ORIGINAL image ratio.
+     No cropping. */
+  object-fit: contain;
+
+  border-radius: 24px;
+}
+
+
+/* =========================================================
+   GENERAL CONTENT SECTIONS
+   ========================================================= */
+
+.project-section,
+.project-output {
+  max-width: 1180px;
+  margin: 0 auto 145px;
+}
+
+.project-section h2,
+.project-output h2 {
+  margin: 28px 0 30px;
+
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 1.05;
+  letter-spacing: -2.5px;
+}
+
+.project-section > p {
+  max-width: 1050px;
+
+  color: #aaa5b8;
+
+  font-size: 20px;
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   WORKING STEPS
+   ========================================================= */
+
+.working-steps {
+  margin-top: 55px;
+
+  border-top: 1px solid #292331;
+}
+
+.working-step {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  align-items: center;
+
+  min-height: 105px;
+
+  border-bottom: 1px solid #292331;
+}
+
+.working-step span {
+  color: #a995ff;
+
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.working-step p {
+  margin: 0;
+
+  color: #aaa5b8;
+
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   PROJECT OUTPUT
+   ========================================================= */
+
+.project-output {
+  max-width: 1250px;
+}
+
+.project-output-image {
+  width: 100%;
+
+  margin-top: 50px;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  border: 1px solid #292331;
+
+  background: #111016;
+}
+
+.project-output-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  /* IMPORTANT:
+     Preserve the actual photograph.
+     Nothing gets cropped. */
+  object-fit: contain;
+
+  border-radius: 24px;
+}
+
+
+/* =========================================================
+   TECHNOLOGIES
+   ========================================================= */
+
+.project-technologies {
+  margin-bottom: 120px;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 35px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.project-footer {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding-top: 40px;
+
+  border-top: 1px solid #292331;
+}
+
+.project-footer a {
+  color: #b9a7ff;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  transition: color 0.25s ease;
+}
+
+.project-footer a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .project-page {
+    padding: 0 5vw 70px;
+  }
+
+  .project-back {
+    margin-top: 28px;
+    margin-bottom: 65px;
+  }
+
+  .project-hero {
+    margin-bottom: 65px;
+  }
+
+  .project-hero h1 {
+    font-size: clamp(48px, 10vw, 75px);
+    letter-spacing: -2.5px;
+  }
+
+  .project-intro {
+    font-size: 18px;
+  }
+
+  .project-main-media {
+    margin-bottom: 100px;
+    border-radius: 18px;
+  }
+
+  .project-main-media img {
+    border-radius: 18px;
+  }
+
+  .project-section,
+  .project-output {
+    margin-bottom: 100px;
+  }
+
+  .project-section h2,
+  .project-output h2 {
+    font-size: 48px;
+  }
+
+  .project-output-image {
+    border-radius: 18px;
+  }
+
+  .project-output-image img {
+    border-radius: 18px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .project-page {
+    padding: 0 20px 60px;
+  }
+
+  .project-back {
+    margin-top: 25px;
+    margin-bottom: 55px;
+  }
+
+  .project-label,
+  .project-section-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .project-hero h1 {
+    margin-top: 22px;
+
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .project-intro {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+ .project-main-video {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto 145px;
+
+  border: 1px solid #292331;
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  background: #08070b;
+}
+
+.project-main-video video {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  /*
+    The original 848 × 388 ratio is preserved.
+    No cropping.
+  */
+  object-fit: contain;
+}
+
+  .project-main-media img {
+    border-radius: 14px;
+  }
+
+  .project-section h2,
+  .project-output h2 {
+    font-size: 40px;
+    letter-spacing: -1.5px;
+  }
+
+  .project-section > p {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .working-step {
+    grid-template-columns: 55px 1fr;
+    min-height: 100px;
+  }
+
+  .working-step p {
+    font-size: 16px;
+  }
+
+  .project-output-image {
+    margin-top: 35px;
+    border-radius: 14px;
+  }
+
+  .project-output-image img {
+    border-radius: 14px;
+  }
+
+  .project-tags span,
+  .project-tech-list span {
+    padding: 8px 13px;
+    font-size: 13px;
+  }
+}
